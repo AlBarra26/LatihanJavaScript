@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom API Javascript</title>
+</head>
+<body>
+    <p class="paragraf">Balonku ada 5 rupa-rupa warnanya merah,kuning,kelabu,merah muda,dan biru</p>
+
+    <p class="paragraf">Meletus balon hijau duarrrrr, hatiku sangat kacau</p>
+
+    <p class="paragraf">Balonku tinggal 4 kupegang erat-erat</p>
+    
+    <script>
+        var paragraf = document.getElementsByClassName("paragraf");
+        setInterval(function (){
+            paragraf[0].style.color = "red";
+            paragraf[1].style.color = "yellow";
+            paragraf[2].style.color = "blue";
+
+            setTimeout(function (){
+                paragraf[0].style.color = "pink";
+                paragraf[1].style.color = "green";
+                paragraf[2].style.color = "aquamarine";      
+            },500)            
+        },1000);
+    </script>
+</body>
+</html>

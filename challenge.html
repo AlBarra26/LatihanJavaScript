@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var nama = prompt("Masukan Nama Anda")
+        document.write(nama);
+        document.write("<br>");
+        document.write("<br>");
+
+        var x = prompt("Masukan Angka untuk pengulangan Bintang");
+        var y ="";
+        for(let i = x; i >= 0; i--){
+            for(let j = 0; j <= i; j++){
+                y += "*";
+            }
+            y += "<br>";
+        }
+        document.write(y);
+        document.write("<br>");
+
+        var a = prompt("Masukan Angka untuk pengulangan Angka");
+        var b = "";
+        for(let p = 1; p <= a; p++){
+            for(let q = 1; q <= p; q++){
+                b += q;
+            }
+            b += "<br></=>";
+        }
+        document.write(b);
+    </script>
+</body>
+</html>
